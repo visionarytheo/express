@@ -83,7 +83,7 @@ header li a:hover{
 #hero-text{
     background: rgba(101, 99, 85, 0.5);
     width: 500px;
-    margin-left: 22%;
+    margin-left: 300px;
     margin-top: 50px;
 }
 
@@ -97,8 +97,7 @@ header li a:hover{
 }
 
 .btn-1{
-   // height: 38px;
-   padding: 10px 50px;
+    padding: 10px 50px;
     border-radius: 10px;
     border: none;
     background: #ff7301;
@@ -223,8 +222,10 @@ footer p{
     color: #000000;
 }
 
-@media screen and (max-width: ){
-
+@media screen and (max-width: 768px){
+    body{
+        display: none;
+    }
 }
 
 
