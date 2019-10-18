@@ -3,6 +3,8 @@ body{
     margin: 0;
     padding: 0;
     background: #ffffff;
+    //width: 1920px;
+    //height: 1080px;
 }
 
 /* Global */
@@ -83,8 +85,7 @@ header li a:hover{
 #hero-text{
     background: rgba(101, 99, 85, 0.5);
     width: 500px;
-    margin-left: 300px;
-    margin-top: 50px;
+    margin: auto;
 }
 
 .hero h1{
@@ -222,11 +223,7 @@ footer p{
     color: #000000;
 }
 
-@media screen and (max-width: 768px){
-    body{
-        display: none;
-    }
-}
+
 
 
 
