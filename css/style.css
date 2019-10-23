@@ -25,7 +25,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   #scroll {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 10px;
   }
 }
@@ -105,8 +105,8 @@ header #logo img {
 
 @media screen and (max-width: 425px) {
   header #logo img {
-    width: 120px;
-    height: 90px;
+    width: 150px;
+    height: 130px;
     margin-bottom: 5px;
   }
 }
@@ -157,7 +157,13 @@ header li a:hover {
 @media screen and (max-width: 1024px) {
   .hero {
     background-position: right;
-    min-height: 360px;
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    min-height: 380px;
   }
 }
 
@@ -186,12 +192,6 @@ header li a:hover {
 @media screen and (max-width: 768px) {
   .hero #hero-text h1 {
     font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .hero #hero-text h1 {
-    font-size: 20px;
   }
 }
 
@@ -225,7 +225,7 @@ header li a:hover {
 /* About Us*/
 .about {
   margin: 0%;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 .about p {

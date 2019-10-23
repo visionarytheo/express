@@ -5,6 +5,12 @@
     }
 }
 
+@mixin bp-phoneS {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
 @mixin bp-phoneL {
     @media screen and (max-width: 425px) {
         @content;
