@@ -37,6 +37,11 @@ a {
 }
 
 /*Media Query Mixins*/
+.cruises .cruise img {
+  width: 80%;
+  height: 40%;
+}
+
 /* Header **/
 header {
   padding-top: 10px;
