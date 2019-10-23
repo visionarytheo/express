@@ -3,9 +3,12 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* Global */
+/* Imports */
+/*Media Query Mixins*/
 .container {
   width: 80%;
   margin: auto;
@@ -13,11 +16,34 @@ body {
   text-align: center;
 }
 
+.container #scroll {
+  width: 15px;
+  height: 50px;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
 ul {
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn-1 {
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  background: #ff7301;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Media Query Mixins*/
 /* Header **/
 header {
   padding-top: 10px;
@@ -25,7 +51,6 @@ header {
 }
 
 header a {
-  text-decoration: none;
   color: #655556;
   text-transform: uppercase;
   font-size: 14px;
@@ -52,16 +77,16 @@ header nav {
   margin-top: 60px;
 }
 
-.active {
+header .active {
   color: #ff7301;
   font-weight: bold;
 }
 
-.mobile img {
+header .mobile img {
   width: 30px;
 }
 
-#desktop-hide {
+header #desktop-hide {
   display: none;
 }
 
@@ -79,40 +104,23 @@ header li a:hover {
   color: #f4f4f4;
 }
 
-#hero-text {
+.hero #hero-text {
   background: rgba(101, 99, 85, 0.5);
-  width: 500px;
+  width: 40%;
   margin: auto;
 }
 
-.hero h1 {
+.hero #hero-text h1 {
   font-size: 46px;
 }
 
-.hero p {
+.hero #hero-text p {
   font-size: 18px;
   padding-bottom: 10px;
 }
 
-.btn-1 {
-  padding: 10px 50px;
-  border-radius: 10px;
-  border: none;
-  background: #ff7301;
-  cursor: pointer;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-}
-
 .hero button {
   margin-top: 10px;
-}
-
-#scroll {
-  width: 15px;
-  height: 50px;
-  padding: 30px 0;
 }
 
 /* About Us*/
@@ -122,59 +130,44 @@ header li a:hover {
   border-top: #ff7301 6px solid;
 }
 
+.about p {
+  font-size: 12px;
+  color: #655556;
+}
+
 .about h1 {
   color: #ff7301;
 }
 
-#background img {
-  float: left;
-  width: 480px;
+.about #background, .about #services, .about #satisfaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .box1 div img {
+  width: 500px;
   height: 250px;
 }
 
-#background .text1 {
-  float: right;
-  width: 480px;
+.about .text1 {
+  width: 500px;
   height: 250px;
 }
 
-#background p {
-  font-size: 12px;
-  color: #655556;
+.about #services .text1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-#services img {
-  float: right;
-  width: 480px;
-  height: 250px;
-}
-
-#services .text1 {
-  float: left;
-  width: 480px;
-  height: 250px;
-}
-
-#services p {
-  font-size: 12px;
-  color: #655556;
-}
-
-#satisfaction img {
-  float: left;
-  width: 480px;
-  height: 250px;
-}
-
-#satisfaction .text1 {
-  float: right;
-  width: 480px;
-  height: 250px;
-}
-
-#satisfaction p {
-  font-size: 12px;
-  color: #655556;
+.about #services div {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 /* Newsletter */
@@ -218,5 +211,6 @@ footer li a img {
 
 footer p {
   color: #000000;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
