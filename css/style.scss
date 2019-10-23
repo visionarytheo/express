@@ -152,6 +152,10 @@ header{
             @include bp-phoneL{
                 font-size: 9px;
         }
+
+            @include bp-phone{
+                font-size: 7px;
+            }
     }
     h1{
         color: #ff7301
@@ -162,6 +166,7 @@ header{
         justify-content: space-between;
         @include bp-tablet{
            flex-direction: column;
+           justify-content: space-around;
         }
     }
     

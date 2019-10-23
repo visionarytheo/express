@@ -239,6 +239,12 @@ header li a:hover {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .about p {
+    font-size: 7px;
+  }
+}
+
 .about h1 {
   color: #ff7301;
 }
@@ -258,6 +264,8 @@ header li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
