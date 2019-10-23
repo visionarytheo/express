@@ -13,12 +13,18 @@ body{
 /* Header **/
 header{
     padding-top: 10px;
-    min-height: 70px;  
-
+    min-height: 70px; 
+    
     a{
         color: #655556;
         text-transform: uppercase;
         font-size: 14px;
+        @include bp-phoneL{
+            font-size: 12px;
+        }
+        @include bp-phone{
+           font-size: 9px;
+        }
     }
     
     li{
@@ -29,17 +35,30 @@ header{
     
     #logo{
         float: left;
+        @include bp-phoneL{
+            float: none;
+        }
     }
     
     #logo img{
         width: 170px;
         height: 140px;
         margin-bottom: 30px;
+        @include bp-phoneL{
+            width: 120px;
+            height: 90px;
+            margin-bottom: 5px;
+        }
     }
     
     nav{
         float: right;
         margin-top: 60px;
+        @include bp-phoneL{
+            float: none;
+            margin-top: 5px;
+            padding: 10px 0;
+        }
     }
     
     .active{
@@ -53,6 +72,9 @@ header{
     
     #desktop-hide{
         display: none;
+        @include bp-phoneL{
+            //display: block;
+        }
     }
     
     li a:hover{
@@ -68,24 +90,54 @@ header{
     background-position: center;
     text-align: center;
     color: #f4f4f4;
+    display: flex;
+    @include bp-laptop{
+        background-position: right;
+        min-height: 360px;
+    }
 
     #hero-text{
         background: rgba(101, 99, 85, 0.5);
-        width: 40%;
+        width: 50%;
         margin: auto;
+        @include bp-phoneL{
+            width: 80%;
+        }
         
         h1{
             font-size: 46px;
+            @include bp-laptop{
+                font-size: 32px;
+            }
+
+                @include bp-tablet{
+                    font-size: 28px;
+                }
+
+                @include bp-phone{
+                    font-size: 20px;
+                 }
         }
         
         p{
             font-size: 18px;
             padding-bottom: 10px;
+            @include bp-laptop{
+                font-size: 16px;
+            }
+
+            @include bp-tablet{
+                font-size: 14px;
+            }
+
+            @include bp-phone{
+                font-size: 9px;
+             }
         }
     }
     
     button{
-        margin-top: 10px;
+        margin: auto;
     }
 }
 
@@ -93,10 +145,13 @@ header{
 .about{
     margin: 0%;
     padding: 100px 0;
-    border-top: #ff7301 6px solid;
+    //border-top: #ff7301 6px solid;
     p{
         font-size: 12px;
         color: #655556;
+            @include bp-phoneL{
+                font-size: 9px;
+        }
     }
     h1{
         color: #ff7301
@@ -105,16 +160,28 @@ header{
     #background, #services, #satisfaction{
         display: flex;
         justify-content: space-between;
+        @include bp-tablet{
+           flex-direction: column;
+        }
     }
     
-    .box1 div img{
+    .box1 div img, .text1{
         width: 500px;
         height: 250px;
-    }
+        @include bp-laptop{
+            width: 400px;
+            height: 200px;
+        }
+        
+        @include bp-tablet{
+            margin: auto;
+        }
 
-    .text1{
-        width: 500px;
-        height: 250px;
+        @include bp-phoneL{
+            width: 300px;
+            height: 150px;
+        }
+        
     }
     
     #services{
@@ -124,6 +191,14 @@ header{
         div{
         order: 2;
     }
+        @include bp-tablet{
+            .text1{
+                order: 2;
+            }
+                div{
+                order: 1;
+            }      
+        }
     }
 }
 
@@ -133,20 +208,31 @@ header{
     color: #ffffff;
     background: #655556;
     
-    form{
-    margin: 20px 0;
-}
+        form{
+            margin: 20px 0;
+        }
 
-    input[type="email"]{
-    padding: 4px;
-    height: 25px;
-    width: 250px;
-}
+        input[type="email"]{
+            padding: 4px;
+            height: 25px;
+            width: 250px;
 
-    p{
-    font-size: 12px;
-    color: #f4f4f4;
-}
+            @include bp-phoneL{
+                width: 100%;
+                }
+        }
+
+        p{
+            font-size: 12px;
+            color: #f4f4f4;
+            }
+
+        button{
+            @include bp-phoneL{
+                width: 100%;
+                border-radius: unset;
+            }
+        }
 }
 
 /*Footer*/
@@ -163,6 +249,9 @@ footer{
 
     li a img{
     width: 30px;
+    @include bp-phone{
+        width: 20px;
+     }
 }
 
     p{

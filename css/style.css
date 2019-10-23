@@ -16,11 +16,24 @@ body {
   text-align: center;
 }
 
-.container #scroll {
+#scroll {
   width: 15px;
   height: 50px;
   padding: 30px 0;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  #scroll {
+    margin-top: 20px;
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #scroll {
+    display: none;
+  }
 }
 
 ul {
@@ -56,6 +69,18 @@ header a {
   font-size: 14px;
 }
 
+@media screen and (max-width: 425px) {
+  header a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header a {
+    font-size: 9px;
+  }
+}
+
 header li {
   list-style: none;
   display: inline;
@@ -66,15 +91,37 @@ header #logo {
   float: left;
 }
 
+@media screen and (max-width: 425px) {
+  header #logo {
+    float: none;
+  }
+}
+
 header #logo img {
   width: 170px;
   height: 140px;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 425px) {
+  header #logo img {
+    width: 120px;
+    height: 90px;
+    margin-bottom: 5px;
+  }
+}
+
 header nav {
   float: right;
   margin-top: 60px;
+}
+
+@media screen and (max-width: 425px) {
+  header nav {
+    float: none;
+    margin-top: 5px;
+    padding: 10px 0;
+  }
 }
 
 header .active {
@@ -102,16 +149,50 @@ header li a:hover {
   background-position: center;
   text-align: center;
   color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-position: right;
+    min-height: 360px;
+  }
 }
 
 .hero #hero-text {
   background: rgba(101, 99, 85, 0.5);
-  width: 40%;
+  width: 50%;
   margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .hero #hero-text {
+    width: 80%;
+  }
 }
 
 .hero #hero-text h1 {
   font-size: 46px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero #hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero #hero-text h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero #hero-text h1 {
+    font-size: 20px;
+  }
 }
 
 .hero #hero-text p {
@@ -119,20 +200,43 @@ header li a:hover {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero #hero-text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero #hero-text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero #hero-text p {
+    font-size: 9px;
+  }
+}
+
 .hero button {
-  margin-top: 10px;
+  margin: auto;
 }
 
 /* About Us*/
 .about {
   margin: 0%;
   padding: 100px 0;
-  border-top: #ff7301 6px solid;
 }
 
 .about p {
   font-size: 12px;
   color: #655556;
+}
+
+@media screen and (max-width: 425px) {
+  .about p {
+    font-size: 9px;
+  }
 }
 
 .about h1 {
@@ -148,14 +252,38 @@ header li a:hover {
           justify-content: space-between;
 }
 
-.about .box1 div img {
+@media screen and (max-width: 768px) {
+  .about #background, .about #services, .about #satisfaction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about .box1 div img, .about .text1 {
   width: 500px;
   height: 250px;
 }
 
-.about .text1 {
-  width: 500px;
-  height: 250px;
+@media screen and (max-width: 1024px) {
+  .about .box1 div img, .about .text1 {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .box1 div img, .about .text1 {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about .box1 div img, .about .text1 {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 .about #services .text1 {
@@ -168,6 +296,19 @@ header li a:hover {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .about #services .text1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about #services div {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 /* Newsletter */
@@ -187,9 +328,22 @@ header li a:hover {
   width: 250px;
 }
 
+@media screen and (max-width: 425px) {
+  #newsletter input[type="email"] {
+    width: 100%;
+  }
+}
+
 #newsletter p {
   font-size: 12px;
   color: #f4f4f4;
+}
+
+@media screen and (max-width: 425px) {
+  #newsletter button {
+    width: 100%;
+    border-radius: unset;
+  }
 }
 
 /*Footer*/
@@ -207,6 +361,12 @@ footer li {
 
 footer li a img {
   width: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  footer li a img {
+    width: 20px;
+  }
 }
 
 footer p {
