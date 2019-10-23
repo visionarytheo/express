@@ -163,7 +163,7 @@ header li a:hover {
 
 @media screen and (max-width: 425px) {
   .hero {
-    min-height: 380px;
+    min-height: 400px;
   }
 }
 
