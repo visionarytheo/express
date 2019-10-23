@@ -152,10 +152,6 @@ header{
             @include bp-phoneL{
                 font-size: 9px;
         }
-
-            @include bp-phone{
-                font-size: 7px;
-            }
     }
     h1{
         color: #ff7301
@@ -184,8 +180,13 @@ header{
 
         @include bp-phoneL{
             width: 300px;
-            height: 150px;
+            height: 180px;
         }
+
+        @include bp-phone{
+            width: 250px;
+            height: 160px;
+         }
         
     }
     
@@ -202,6 +203,7 @@ header{
             }
                 div{
                 order: 1;
+                padding-top: 10px;
             }      
         }
     }
