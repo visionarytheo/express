@@ -17,6 +17,7 @@
   #scroll {
     margin-top: 10px;
     width: 10px;
+    height: 30px;
   }
 }
 
@@ -26,10 +27,9 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   #scroll {
-    padding: 80px;
-    width: 10px;
+    padding: 80px 0;
   }
 }
 
