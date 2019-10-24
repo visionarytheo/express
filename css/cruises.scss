@@ -1,4 +1,28 @@
-.cruises .cruise img{
-    width: 80%;
-    height: 40%;
+@import 'mixins';
+
+.img-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cruise{
+    padding: 0 20px 20px;
+}
+
+.cruise img{
+    width: 480px;
+    height: 400px;
+    @include bp-phoneL{
+        width: 280px;
+        height: 200px;
+    }
+
+    @include bp-phoneS{
+        width: 240px;
+        height: 200px;
+    }
+    
 }
