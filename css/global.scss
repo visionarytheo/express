@@ -4,6 +4,10 @@
     margin: auto;
     overflow: hidden;
     text-align: center;
+    @include bp-laptopL{
+        width: 90%;;
+    }
+
 }
 
 ul{
@@ -24,4 +28,8 @@ a{
     color: #ffffff;
     font-weight: bold;
     text-align: center;
+    @include bp-laptopL{
+        padding: 30px 100px;
+    }
+
 }

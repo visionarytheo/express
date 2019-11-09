@@ -14,7 +14,12 @@ body{
 /* Header **/
 header{
     padding-top: 10px;
-    min-height: 70px; 
+    min-height: 70px;
+    @include bp-laptopL{
+        padding: 30px 0;
+        min-height: 150px;
+    }
+
     
     a{
         color: #655556;
@@ -26,6 +31,10 @@ header{
         @include bp-phone{
            font-size: 9px;
         }
+        @include bp-laptopL{
+            font-size: 20px;
+        }
+
     }
     
     li{
@@ -50,6 +59,11 @@ header{
             height: 130px;
             margin-bottom: 5px;
         }
+        @include bp-laptopL{
+           width: 270px;
+           height: 240px;
+        }
+
     }
     
     nav{
@@ -60,6 +74,10 @@ header{
             margin-top: 5px;
             padding: 10px 0;
         }
+        @include bp-laptopL{
+            margin-top: 120px;
+        }
+
     }
     
     .active{
@@ -87,7 +105,7 @@ header{
 /* Hero section */
 .hero{
     min-height: 500px;
-    padding-bottom: 50px;
+    padding-bottom: 3%;
     background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat;
     background-position: center;
     text-align: center;
@@ -103,6 +121,10 @@ header{
        background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -1300px -300px;
      }
 
+     @include bp-laptopL{
+            min-height: 800px;
+    }
+
     #hero-text{
         background: rgba(101, 99, 85, 0.5);
         width: 50%;
@@ -113,6 +135,11 @@ header{
         
         h1{
             font-size: 46px;
+
+            @include bp-laptopL{
+                font-size:90px;
+            }
+
             @include bp-laptop{
                 font-size: 32px;
             }
@@ -126,6 +153,11 @@ header{
         p{
             font-size: 18px;
             padding-bottom: 10px;
+
+            @include bp-laptopL{
+                font-size: 46px;
+            }
+
             @include bp-laptop{
                 font-size: 16px;
             }
@@ -150,15 +182,38 @@ header{
     margin: 0%;
     padding: 20px 0;
     //border-top: #ff7301 6px solid;
+
+    @include bp-laptopL{
+        padding: 150px 0;
+    }
+
+
     p{
         font-size: 12px;
         color: #655556;
             @include bp-phoneL{
                 font-size: 9px;
         }
+
+        @include bp-laptopL{
+            font-size: 22px;
+           }
+
     }
+
+    h3{
+        @include bp-laptopL{
+            font-size: 36px;        
+        }
+    }
+
     h1{
-        color: #ff7301
+        color: #ff7301;
+
+        @include bp-laptopL{
+            font-size: 46px;        
+        }
+
     }
 
     #background, #services, #satisfaction{
@@ -191,6 +246,11 @@ header{
             width: 250px;
             height: 160px;
          }
+
+         @include bp-laptopL{
+            width: 1000px;     
+            height: 500px;   
+        }
         
     }
     
@@ -216,6 +276,11 @@ header{
 /* Newsletter */
 #newsletter{
     padding: 20px 0;
+
+    @include bp-laptopL{
+        padding: 50px;            
+    }
+
     color: #ffffff;
     background: #655556;
     
@@ -231,18 +296,40 @@ header{
             @include bp-phoneL{
                 width: 100%;
                 }
+
+                @include bp-laptopL{
+                    height: 40px;
+                    width: 400px;
+                    padding: 10px;
+                    margin-right: 20px;
+                }
+        
         }
 
         p{
             font-size: 12px;
             color: #f4f4f4;
+            @include bp-laptopL{
+                font-size: 20px;    
             }
+            }
+
+        h1{
+            @include bp-laptopL{
+                font-size: 40px;    
+            }
+        }
 
         button{
             @include bp-phoneL{
                 width: 100%;
                 border-radius: unset;
             }
+
+            @include bp-laptopL{
+                margin-left: 20px;
+            }
+    
         }
 }
 

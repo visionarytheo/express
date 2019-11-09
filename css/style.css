@@ -16,6 +16,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -34,6 +40,12 @@ a {
   color: #ffffff;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .btn-1 {
+    padding: 30px 100px;
+  }
 }
 
 /*Media Query Mixins*/
@@ -85,6 +97,13 @@ header {
   min-height: 70px;
 }
 
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 30px 0;
+    min-height: 150px;
+  }
+}
+
 header a {
   color: #655556;
   text-transform: uppercase;
@@ -100,6 +119,12 @@ header a {
 @media screen and (max-width: 375px) {
   header a {
     font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header a {
+    font-size: 20px;
   }
 }
 
@@ -133,6 +158,13 @@ header #logo img {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  header #logo img {
+    width: 270px;
+    height: 240px;
+  }
+}
+
 header nav {
   float: right;
   margin-top: 60px;
@@ -143,6 +175,12 @@ header nav {
     float: none;
     margin-top: 5px;
     padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header nav {
+    margin-top: 120px;
   }
 }
 
@@ -167,7 +205,7 @@ header li a:hover {
 /* Hero section */
 .hero {
   min-height: 500px;
-  padding-bottom: 50px;
+  padding-bottom: 3%;
   background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat;
   background-position: center;
   text-align: center;
@@ -191,6 +229,12 @@ header li a:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-height: 800px;
+  }
+}
+
 .hero #hero-text {
   background: rgba(101, 99, 85, 0.5);
   width: 50%;
@@ -205,6 +249,12 @@ header li a:hover {
 
 .hero #hero-text h1 {
   font-size: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero #hero-text h1 {
+    font-size: 90px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,6 +272,12 @@ header li a:hover {
 .hero #hero-text p {
   font-size: 18px;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero #hero-text p {
+    font-size: 46px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -252,6 +308,12 @@ header li a:hover {
   padding: 20px 0;
 }
 
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 150px 0;
+  }
+}
+
 .about p {
   font-size: 12px;
   color: #655556;
@@ -263,8 +325,26 @@ header li a:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .about p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about h3 {
+    font-size: 36px;
+  }
+}
+
 .about h1 {
   color: #ff7301;
+}
+
+@media screen and (min-width: 1440px) {
+  .about h1 {
+    font-size: 46px;
+  }
 }
 
 .about #background, .about #services, .about #satisfaction {
@@ -319,6 +399,13 @@ header li a:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .about .box1 div img, .about .text1 {
+    width: 1000px;
+    height: 500px;
+  }
+}
+
 .about #services .text1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -352,6 +439,12 @@ header li a:hover {
   background: #655556;
 }
 
+@media screen and (min-width: 1440px) {
+  #newsletter {
+    padding: 50px;
+  }
+}
+
 #newsletter form {
   margin: 20px 0;
 }
@@ -368,15 +461,42 @@ header li a:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  #newsletter input[type="email"] {
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+}
+
 #newsletter p {
   font-size: 12px;
   color: #f4f4f4;
+}
+
+@media screen and (min-width: 1440px) {
+  #newsletter p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #newsletter h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   #newsletter button {
     width: 100%;
     border-radius: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #newsletter button {
+    margin-left: 20px;
   }
 }
 

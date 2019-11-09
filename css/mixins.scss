@@ -30,7 +30,7 @@
 }
 
 @mixin bp-laptopM {
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1439px) {
         @content;
     }
 }
