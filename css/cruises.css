@@ -1,4 +1,116 @@
 /*Media Query Mixins*/
+.hero2 {
+  min-height: 500px;
+  padding-bottom: 3%;
+  background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero2 {
+    background-position: right;
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero2 {
+    min-height: 400px;
+    background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero2 {
+    min-height: 800px;
+  }
+}
+
+.hero2 #hero-text2 {
+  background: rgba(101, 99, 85, 0.5);
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .hero2 #hero-text2 {
+    width: 80%;
+  }
+}
+
+.hero2 #hero-text2 h1 {
+  font-size: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero2 #hero-text2 h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero2 #hero-text2 h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero2 #hero-text2 h1 {
+    font-size: 28px;
+  }
+}
+
+.hero2 #hero-text2 p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero2 #hero-text2 p {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero2 #hero-text2 p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero2 #hero-text2 p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero2 #hero-text2 p {
+    font-size: 9px;
+  }
+}
+
+.hero2 button {
+  margin: auto;
+}
+
+.heading1 {
+  padding-top: 30px;
+}
+
+.heading1 h1 {
+  font-size: 36px;
+  color: #ff7301;
+}
+
+.heading1 h3 {
+  font-size: 22px;
+}
+
 .img-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +130,7 @@
 }
 
 .cruise {
-  padding: 0 20px 50px;
+  padding: 50px;
 }
 
 .cruise img {
