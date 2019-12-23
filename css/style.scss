@@ -1,5 +1,5 @@
 body{
-    font: 15px/1.5 montserrat;
+    font: 100%/1.5 montserrat;
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -239,7 +239,7 @@ header{
 
         @include bp-phoneL{
             width: 300px;
-            height: 180px;
+            height: 160px;
         }
 
         @include bp-phone{
@@ -248,8 +248,8 @@ header{
          }
 
          @include bp-laptopL{
-            width: 1000px;     
-            height: 500px;   
+            width: 800px;     
+            height: 400px;   
         }
         
     }

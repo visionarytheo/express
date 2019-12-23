@@ -29,6 +29,12 @@
     }
 }
 
+@mixin bp-laptopex {
+    @media screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
 @mixin bp-laptopM {
     @media screen and (max-width: 1439px) {
         @content;
@@ -37,6 +43,12 @@
 
 @mixin bp-laptopL {
     @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin bp-laptop4K {
+    @media screen and (min-width: 1800px) {
         @content;
     }
 }

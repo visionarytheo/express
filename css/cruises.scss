@@ -13,7 +13,7 @@
         min-height: 300px;
     }
 
-    @include bp-phoneL{
+    @include bp-phone{
        min-height: 400px;
        background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat;
      }
@@ -110,4 +110,35 @@
         height: 200px;
     }
     
+}
+
+.included{
+    text-align: center;
+    padding: 20px 0;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+    li img{
+    width: 30px;
+    @include bp-phone{
+        width: 40px;
+     }
+}
+
+    h6{
+    color: #000000;
+    font-size: 13px;
+    @include bp-phone{
+        font-size: 14px;
+     }
+}
 }

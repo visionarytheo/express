@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   .hero2 {
     min-height: 400px;
     background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat;
@@ -149,6 +149,48 @@
   .cruise img {
     width: 240px;
     height: 200px;
+  }
+}
+
+.included {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.included ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.included li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.included li img {
+  width: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .included li img {
+    width: 40px;
+  }
+}
+
+.included h6 {
+  color: #000000;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 375px) {
+  .included h6 {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=cruises.css.map */
