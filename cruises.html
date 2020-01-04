@@ -43,36 +43,41 @@
                 <h1>EARLY BOOKINGS CRUISES</h1>
                 <h3>2020/21 SEASON</h3>
             </div>
+
             <div class="img-area">
             <div class="cruise">
                 <img src="img/Cruises/beach_sand_palm_138407_1024x768.jpg" alt="3N-Opera">
                 <h1>3 Nights, 4 Days <span>MSC OPERA</span></h1>
                 <p>Durban - Portuguese Island - Durban</p>
-                <button type="button" class="btn-2 btn-1">R 4 200 p.p</button>
+                <a href="./feedback_form/feedback_form.html "class="btn-2 btn-1">R 4 200 p.p</a>
             </div>
+
             <div class="cruise">
                 <img src="img/Cruises/beach_sand_sea_palm_92526_1024x768.jpg" alt="3N-Musica">
                 <h1>3 Nights, 4 Days <span>MSC MUSICA</span></h1>
                 <p>Durban - Portuguese Island - Durban</p>
-                <button type="button" class="btn-2">R 3 900 p.p</button>
+                <a href="./feedback_form/feedback_form.html "class="btn-2 btn-1">R 3 900 p.p</a>
             </div>
+
             <div class="cruise">
                 <img src="img/Cruises/palm_trees_vacation_sun_beds_pool_94865_1024x768.jpg" alt="4N-Musica">
                 <h1>4 Nights, 5 Days <span>MSC MUSICA</span></h1>
                 <p>Durban - Maputo - Pomene - Durban</p>
-                <button type="button" class="btn-2">R 4 870 p.p</button>
+                <a href="./feedback_form/feedback_form.html "class="btn-2 btn-1">R 4 870 p.p</a>
             </div>
+
             <div class="cruise">
                 <img src="img/Cruises/umbrellas_beach_sea_139649_1024x768.jpg" alt="4N-Opera">
                 <h1>4 Nights, 5 Days <span>MSC OPERA</span></h1>
                 <p>Durban - Maputo - Pomene - Durban</p>
-                <button type="button" class="btn-2">R 5 200 p.p</button>
+                <a href="./feedback_form/feedback_form.html "class="btn-2 btn-1">R 5 200 p.p</a>
             </div>
+
             <div class="cruise">
                 <img src="img/Cruises/tour_img-1062452-146.jpg" alt="2N-Musica">
                 <h1>2 Nights, 3 Days <span>MSC MUSICA</span></h1>
                 <p>Durban - Nowhere</p>
-                <button type="button" class="btn-2">R 3 400 p.p</button>
+                <a href="./feedback_form/feedback_form.html "class="btn-2 btn-1">R 3 400 p.p</a>
             </div>
             </div>
     </section>
@@ -107,5 +112,25 @@
         </div>
     </footer>
     </div>
+
+    <!--Javascript here-->
+<script>
+
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+    
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+    
+    exit.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+    
+    </script>
+    <!--Javascript ends here-->
 
     </body>

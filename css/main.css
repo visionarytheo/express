@@ -662,6 +662,7 @@ section.early-bookings .img-area .cruise .btn-2 {
   background-color: #ff9100;
   padding: 0.5em 1em;
   color: #fff;
+  cursor: pointer;
 }
 
 /*Promotionals here*/
@@ -724,5 +725,216 @@ section.promotions p, section.voyages p {
   }
 }
 
+/*Hero section 3 here*/
+.hero-3 {
+  min-height: 400px;
+  background: url(../img/Cruises/MSC19001768.jpg) no-repeat center left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero-3 {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-3 {
+    min-height: 650px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-3 {
+    min-height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-3 {
+    min-height: 900px;
+  }
+}
+
+.hero-3 .hero-text-3 {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #e4dede;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero-3 .hero-text-3 {
+    width: 60%;
+  }
+  .hero-3 .hero-text-3 h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-3 .hero-text-3 {
+    width: 50%;
+  }
+  .hero-3 .hero-text-3 h2 {
+    font-size: 3em;
+  }
+  .hero-3 .hero-text-3 p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-3 .hero-text-3 {
+    width: 40%;
+  }
+  .hero-3 .hero-text-3 h2 {
+    font-size: 3.5em;
+  }
+  .hero-3 .hero-text-3 p {
+    font-size: 1.8em;
+  }
+}
+
+.hero-3 .btn-hero {
+  margin: auto;
+}
+
+.hero-3 a {
+  background-color: #ff9100;
+  border-radius: 5px;
+  padding: .7em 1em;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-3 a {
+    padding: 1.2em 2em;
+  }
+}
+
 /*GT Voyages hete*/
+/*Contacts section here*/
+main.contacts h1 {
+  background-color: #ff9100;
+  color: #fff;
+}
+
+main.contacts h2 {
+  background-color: #e4dede;
+  padding: 0.5em 0;
+}
+
+main.contacts div.contact-1, main.contacts div.contact-2 {
+  padding: 2em;
+}
+
+/*Quotation section here*/
+main.quote {
+  text-align: center;
+  background-color: #e4dede;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  main.quote {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+main.quote h1 {
+  background-color: #ff9100;
+  padding: .8em;
+}
+
+@media only screen and (min-width: 1650px) {
+  main.quote {
+    padding: 2em;
+  }
+  main.quote p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1650px) and (min-width: 1650px) {
+  main.quote p {
+    font-size: 1.8em;
+  }
+}
+
+main.quote h3 {
+  color: #ff9100;
+}
+
+@media only screen and (min-width: 1650px) {
+  main.quote h3 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  main.quote h3 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main.quote form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  main.quote form {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+main.quote form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.55em 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  main.quote form label {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main.quote form label textarea {
+  padding: 3em;
+}
+
+main.quote form button {
+  background: #ff9100;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 1.2em 0;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+main.quote form input {
+  padding: 1em 0;
+  border: solid 0 0 0 2px;
+}
 /*# sourceMappingURL=main.css.map */

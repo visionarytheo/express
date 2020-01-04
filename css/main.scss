@@ -506,6 +506,7 @@ section.early-bookings{
                 background-color: $primaryColor;
                 padding: 0.5em 1em;
                 color: $buttonColor-1;
+                cursor: pointer;
             }
         }
        
@@ -553,9 +554,161 @@ section.promotions{
     }
 }
 
+/*Hero section 3 here*/
+.hero-3{
+    min-height: 400px;
+    background: url(../img/Cruises/MSC19001768.jpg) no-repeat center left;
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        min-height: 450px;
+    }
+    @include laptop{
+        min-height: 650px;
+    }
+    @include laptopL{
+        min-height: 750px;
+    }
+    @include laptopU{
+        min-height: 900px;
+    }
+    .hero-text-3{
+        background-color: rgba(34, 34, 34, 0.5);
+        color: $textColor-1;
+        width: 80%;
+        margin: auto;
+        @include tablet{
+            width: 60%;
+            h2{
+                font-size: 2.2em;
+            }
+        }
+        @include laptop{
+            width: 50%;
+            h2{
+                font-size: 3em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        @include laptopL{
+            width: 40%;
+            h2{
+                font-size: 3.5em;
+            }
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+
+    .btn-hero{
+        margin: auto;
+    }
+    a{
+        background-color: $primaryColor;
+        border-radius: 5px;
+        padding: .7em 1em;
+        color: $buttonColor-1;
+        letter-spacing: 3px;
+        @include laptopL{
+            padding: 1.2em 2em;
+        }
+    }
+}
+
 
 /*GT Voyages hete*/
 .voyages{
     @extend .promotions;
 
+}
+
+/*Contacts section here*/
+main.contacts{
+    h1{
+        background-color: $primaryColor;
+        color: $buttonColor-1;
+    }
+    h2{
+        background-color: $textColor-1;
+        padding: 0.5em 0;
+    }
+
+    div.contact-1, div.contact-2{
+        padding: 2em;
+    }
+}
+
+/*Quotation section here*/
+main.quote{
+    @include laptop{
+        width: 70%;
+        margin: 0 auto;
+    }
+    text-align: center;
+    h1{
+        background-color: $primaryColor;
+        padding: .8em;
+    }
+    background-color: $textColor-1;
+    padding: 1em;
+    @include laptopL{
+        padding: 2em;
+        p{
+            font-size: 1em;
+        }
+        @include laptopU{
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+    h3{
+        color: $primaryColor;
+        @include laptopL{
+            font-size: 2.2em;
+        }
+        @include laptopU{
+            font-size: 3em;
+        }
+    }
+    form{
+        
+        @include laptop{
+            width: 50%;
+            margin: 0 auto;
+        }
+        @include laptopL{
+            width: 35%;
+            margin: 0 auto;
+        }
+        label{
+            display: flex;
+        flex-direction: column;
+        padding: 1.55em 2em;
+        @include laptop{
+            justify-content: center;
+        }
+        textarea{
+            padding: 3em;
+        }
+        }
+        button{
+            background: $primaryColor;
+            color: $buttonColor-1;
+            border: none;
+            border-radius: 3px;
+            padding: 1.2em 0;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }
+        input{
+            padding: 1em 0;
+            border: solid 0 0 0 2px;
+            
+        }
+        
+    }
 }
