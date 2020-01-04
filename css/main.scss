@@ -1,0 +1,561 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Functions here*/
+$textColor-1:#e4dede;
+$navBackground: #413f3f;
+$buttonColor-1: #fff;
+$primaryColor: #ff9100;
+$secondaryColor: #636261;
+
+/*Mixins here*/
+@mixin tablet {
+    @media only screen and (min-width: 650px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin laptopL {
+    @media only screen and (min-width: 1650px) {
+        @content;
+    }
+    
+}
+@mixin laptopU {
+    @media only screen and (min-width: 1650px) {
+        @content;
+    }
+}
+
+/*Global here*/
+.btn-1{
+    :hover{
+        color: $secondaryColor;
+    }
+}
+
+p{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.active{
+    color: $primaryColor;
+}
+
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+    @include laptop{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+/*Header section here*/
+header{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        width: 130px;
+        @include laptop{
+            width: 200px;
+        }
+    }
+    nav{
+        .menu{
+            width: 50px;
+            margin-top: 50%;
+        }
+        
+        .exit-btn{
+            margin-bottom: 1em;
+            margin-top: -1.3em;
+            text-align: right;
+            padding: 0 1.4em;
+            img{
+                width: 15px;
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            position: fixed;
+            width: 60%;
+            top: 0;
+            right: 0;
+            text-align: left;
+            background-color: $navBackground;
+            height: 100%;
+            padding-top: 3em;
+            li{
+                a{
+                    color: $buttonColor-1;
+                    display: block;
+                    width: 100%;
+                    padding: 1em 2em;
+                    background-color: $secondaryColor;
+                    text-transform: uppercase;
+                }
+                :hover{
+                    background-color: $primaryColor;
+                }
+            }
+            :first-child{
+                :hover{
+                    background-color: $navBackground;
+                }
+            }
+        }
+    }
+}
+
+/*Hero section here*/
+section.hero{
+    min-height: 400px;
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -1200px -300px;
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -850px -300px;
+    }
+    @include laptop{
+        background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -600px;
+        min-height: 650px;
+    }
+    @include laptopL{
+        background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -150px;
+        min-height: 750px;
+    }
+    @include laptopU{
+        background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat center;
+        min-height: 900px;
+    }
+    .hero-text{
+        background-color: rgba(94, 93, 93, 0.5);
+        color: $textColor-1;
+        width: 80%;
+        margin: auto;
+        @include tablet{
+            width: 60%;
+            h2{
+                font-size: 2.2em;
+            }
+        }
+        @include laptop{
+            width: 50%;
+            h2{
+                font-size: 3em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        @include laptopL{
+            width: 40%;
+            h2{
+                font-size: 3.5em;
+            }
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+
+    .btn-hero{
+        margin: auto;
+    }
+    a{
+        background-color: $primaryColor;
+        border-radius: 5px;
+        padding: .7em 1em;
+        color: $buttonColor-1;
+        letter-spacing: 3px;
+        @include laptopL{
+            padding: 1.2em 2em;
+        }
+    }
+}
+
+/*About main here*/
+main.about{
+    padding: 3em 0;
+    h1{
+        padding: 2em 0;
+    }
+    @include laptopL{
+        h4{
+            font-size: 1.8em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+        h1{
+            font-size: 2.6em;
+        }
+        @include laptopU{
+            p{
+                font-size: 1.5em;
+            }
+            h4{
+                font-size: 2.5em;
+            }
+            h1{
+                font-size: 3.2em;
+            }
+        }
+    }
+    .box-1{
+        display: flex;
+        flex-direction: column;
+        div img{
+            width: 100%;
+        }
+
+        @include laptop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    #services{
+        div{
+            @include laptop{
+                order: 2;
+            }
+        }
+        .text-1{
+            @include laptop{
+                order: 1;
+            }
+        }
+    }
+}
+
+/*Newsletter section here*/
+section.newsletter{
+    background-color: $textColor-1;
+    padding: 1em;
+    @include laptopL{
+        padding: 2em;
+        p{
+            font-size: 1em;
+        }
+        @include laptopU{
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+    h3{
+        color: $primaryColor;
+        @include laptopL{
+            font-size: 2.2em;
+        }
+        @include laptopU{
+            font-size: 3em;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.55em 2em;
+        @include tablet{
+            display: inherit;
+        }
+        @include laptop{
+            flex-direction: row;
+        }
+        @include laptopL{
+            padding: 2em;
+        }
+        button{
+            background: $primaryColor;
+            color: $buttonColor-1;
+            border: none;
+            border-radius: 3px;
+            padding: .5em 0;
+            letter-spacing: 3px;
+            cursor: pointer;
+            @include tablet{
+                width: 70%;
+                padding: 1em 0;
+            }
+            @include laptop{
+                width: 20%;
+            }
+            @include laptopL{
+                width: 10%;
+                padding: 1.5em 1em;
+            }
+            @include laptopU{
+                padding: 2em 1.5em;
+            }
+        }
+        input{
+            padding: .5em 0;
+            border: none;
+            @include tablet{
+                width: 70%;
+                padding: 1em 0;
+            }
+            @include laptop{
+                width: 40%;
+            }
+            @include laptopL{
+                width: 25%;
+                padding: 1.5em 1em;
+            }
+            @include laptopU{
+                padding: 2em 1.5em;
+            }
+        }
+    }
+}
+
+/*Footer section here*/
+footer{
+    padding-top: 2em;
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            padding: 0 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    header{
+        nav ul{
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+        }
+        nav ul li{
+            float: left;
+            :hover{
+                background-color: inherit;
+                color: $textColor-1;
+            }
+        }
+        nav ul li a{
+            color: $secondaryColor;
+            background-color: inherit;
+            text-align: center;
+            padding: 1em 2em;
+        }
+    }
+
+    .scroll{
+        width: 15px;
+        margin: 5em auto;
+        animation: move 2s infinite alternate;
+        @include laptopL{
+            width: 25px;
+        }
+    }
+    @keyframes move {
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(20px);
+        }
+    }
+
+    .box-1 div{
+        width: 45%;
+    }
+
+    
+}
+
+
+/*Cruises starts here*/
+
+/*Hero section 2 starts here*/
+.hero-2{
+    min-height: 400px;
+    background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat center left;
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        min-height: 450px;
+    }
+    @include laptop{
+        min-height: 650px;
+    }
+    @include laptopL{
+        min-height: 750px;
+    }
+    @include laptopU{
+        min-height: 900px;
+    }
+    .hero-text-2{
+        background-color: rgba(34, 34, 34, 0.5);
+        color: $textColor-1;
+        width: 80%;
+        margin: auto;
+        @include tablet{
+            width: 60%;
+            h2{
+                font-size: 2.2em;
+            }
+        }
+        @include laptop{
+            width: 50%;
+            h2{
+                font-size: 3em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        @include laptopL{
+            width: 40%;
+            h2{
+                font-size: 3.5em;
+            }
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+
+    .btn-hero{
+        margin: auto;
+    }
+    a{
+        background-color: $primaryColor;
+        border-radius: 5px;
+        padding: .7em 1em;
+        color: $buttonColor-1;
+        letter-spacing: 3px;
+        @include laptopL{
+            padding: 1.2em 2em;
+        }
+    }
+}
+
+/*Early bookings here*/
+section.early-bookings{
+    .heading1{
+        padding-bottom: 3em;
+        h1{
+            background-color: rgba(243, 93, 6, 0.5);
+        }   
+    }
+    h3{
+        color: $secondaryColor;
+    }
+    padding: 9em 0;
+    .img-area{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        img{
+            width: 100%;
+            @include tablet{
+                width: 400px;
+                height: 280px;
+            }
+            @include laptop{
+                width: 450px;
+                height: 300px;
+            }
+        }
+        .cruise{
+            padding: 1em;
+            .btn-2{
+                border: none;
+                border-radius: 5px;
+                background-color: $primaryColor;
+                padding: 0.5em 1em;
+                color: $buttonColor-1;
+            }
+        }
+       
+    }
+}
+
+/*Promotionals here*/
+section.promotions{
+    h2{
+        background-color: rgba(243, 93, 6, 0.5);
+    }
+    padding: 2em 0 3em;
+    p{
+        font-size: 1em;
+        color: red;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+}
+
+/*Included here*/
+.included{
+    background-color: $textColor-1;
+    h2{
+        color: $primaryColor;
+        font-size: .9em;
+    }
+    padding: 3em 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        @include laptop{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        li{
+            img{
+                width: 30px;
+                @include laptopL{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+/*GT Voyages hete*/
+.voyages{
+    @extend .promotions;
+
+}

@@ -1,0 +1,728 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*Functions here*/
+/*Mixins here*/
+/*Global here*/
+.btn-1 :hover {
+  color: #636261;
+}
+
+p {
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #ff9100;
+}
+
+.container {
+  text-align: center;
+  padding: .8em 1.2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.hide-mobile {
+  display: none;
+}
+
+/*Header section here*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 130px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header .logo {
+    width: 200px;
+  }
+}
+
+header nav .menu {
+  width: 50px;
+  margin-top: 50%;
+}
+
+header nav .exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+header nav .exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+
+header nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background-color: #413f3f;
+  height: 100%;
+  padding-top: 3em;
+}
+
+header nav ul li a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: #636261;
+  text-transform: uppercase;
+}
+
+header nav ul li :hover {
+  background-color: #ff9100;
+}
+
+header nav ul :first-child :hover {
+  background-color: #413f3f;
+}
+
+/*Hero section here*/
+section.hero {
+  min-height: 400px;
+  background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -1200px -300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 650px) {
+  section.hero {
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -850px -300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.hero {
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -600px;
+    min-height: 650px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.hero {
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -150px;
+    min-height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.hero {
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat center;
+    min-height: 900px;
+  }
+}
+
+section.hero .hero-text {
+  background-color: rgba(94, 93, 93, 0.5);
+  color: #e4dede;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+  section.hero .hero-text {
+    width: 60%;
+  }
+  section.hero .hero-text h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.hero .hero-text {
+    width: 50%;
+  }
+  section.hero .hero-text h2 {
+    font-size: 3em;
+  }
+  section.hero .hero-text p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.hero .hero-text {
+    width: 40%;
+  }
+  section.hero .hero-text h2 {
+    font-size: 3.5em;
+  }
+  section.hero .hero-text p {
+    font-size: 1.8em;
+  }
+}
+
+section.hero .btn-hero {
+  margin: auto;
+}
+
+section.hero a {
+  background-color: #ff9100;
+  border-radius: 5px;
+  padding: .7em 1em;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 1650px) {
+  section.hero a {
+    padding: 1.2em 2em;
+  }
+}
+
+/*About main here*/
+main.about {
+  padding: 3em 0;
+}
+
+main.about h1 {
+  padding: 2em 0;
+}
+
+@media only screen and (min-width: 1650px) {
+  main.about h4 {
+    font-size: 1.8em;
+  }
+  main.about p {
+    font-size: 1.1em;
+  }
+  main.about h1 {
+    font-size: 2.6em;
+  }
+}
+
+@media only screen and (min-width: 1650px) and (min-width: 1650px) {
+  main.about p {
+    font-size: 1.5em;
+  }
+  main.about h4 {
+    font-size: 2.5em;
+  }
+  main.about h1 {
+    font-size: 3.2em;
+  }
+}
+
+main.about .box-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main.about .box-1 div img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  main.about .box-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main.about #services div {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main.about #services .text-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/*Newsletter section here*/
+section.newsletter {
+  background-color: #e4dede;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter {
+    padding: 2em;
+  }
+  section.newsletter p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1650px) and (min-width: 1650px) {
+  section.newsletter p {
+    font-size: 1.8em;
+  }
+}
+
+section.newsletter h3 {
+  color: #ff9100;
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter h3 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter h3 {
+    font-size: 3em;
+  }
+}
+
+section.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.55em 2em;
+}
+
+@media only screen and (min-width: 650px) {
+  section.newsletter form {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.newsletter form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter form {
+    padding: 2em;
+  }
+}
+
+section.newsletter form button {
+  background: #ff9100;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: .5em 0;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+  section.newsletter form button {
+    width: 70%;
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.newsletter form button {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter form button {
+    width: 10%;
+    padding: 1.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter form button {
+    padding: 2em 1.5em;
+  }
+}
+
+section.newsletter form input {
+  padding: .5em 0;
+  border: none;
+}
+
+@media only screen and (min-width: 650px) {
+  section.newsletter form input {
+    width: 70%;
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.newsletter form input {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter form input {
+    width: 25%;
+    padding: 1.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section.newsletter form input {
+    padding: 2em 1.5em;
+  }
+}
+
+/*Footer section here*/
+footer {
+  padding-top: 2em;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer ul li {
+  padding: 0 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  header nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul li {
+    float: left;
+  }
+  header nav ul li :hover {
+    background-color: inherit;
+    color: #e4dede;
+  }
+  header nav ul li a {
+    color: #636261;
+    background-color: inherit;
+    text-align: center;
+    padding: 1em 2em;
+  }
+  .scroll {
+    width: 15px;
+    margin: 5em auto;
+    -webkit-animation: move 2s infinite alternate;
+            animation: move 2s infinite alternate;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-width: 1650px) {
+  .scroll {
+    width: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  @-webkit-keyframes move {
+    from {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    to {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+  }
+  @keyframes move {
+    from {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    to {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+  }
+  .box-1 div {
+    width: 45%;
+  }
+}
+
+/*Cruises starts here*/
+/*Hero section 2 starts here*/
+.hero-2 {
+  min-height: 400px;
+  background: url(../img/Cruises/MSC18015023crop.jpg) no-repeat center left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero-2 {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-2 {
+    min-height: 650px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-2 {
+    min-height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-2 {
+    min-height: 900px;
+  }
+}
+
+.hero-2 .hero-text-2 {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #e4dede;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero-2 .hero-text-2 {
+    width: 60%;
+  }
+  .hero-2 .hero-text-2 h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-2 .hero-text-2 {
+    width: 50%;
+  }
+  .hero-2 .hero-text-2 h2 {
+    font-size: 3em;
+  }
+  .hero-2 .hero-text-2 p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-2 .hero-text-2 {
+    width: 40%;
+  }
+  .hero-2 .hero-text-2 h2 {
+    font-size: 3.5em;
+  }
+  .hero-2 .hero-text-2 p {
+    font-size: 1.8em;
+  }
+}
+
+.hero-2 .btn-hero {
+  margin: auto;
+}
+
+.hero-2 a {
+  background-color: #ff9100;
+  border-radius: 5px;
+  padding: .7em 1em;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-2 a {
+    padding: 1.2em 2em;
+  }
+}
+
+/*Early bookings here*/
+section.early-bookings {
+  padding: 9em 0;
+}
+
+section.early-bookings .heading1 {
+  padding-bottom: 3em;
+}
+
+section.early-bookings .heading1 h1 {
+  background-color: rgba(243, 93, 6, 0.5);
+}
+
+section.early-bookings h3 {
+  color: #636261;
+}
+
+section.early-bookings .img-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.early-bookings .img-area img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+  section.early-bookings .img-area img {
+    width: 400px;
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.early-bookings .img-area img {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+section.early-bookings .img-area .cruise {
+  padding: 1em;
+}
+
+section.early-bookings .img-area .cruise .btn-2 {
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9100;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+
+/*Promotionals here*/
+section.promotions, section.voyages {
+  padding: 2em 0 3em;
+}
+
+section.promotions h2, section.voyages h2 {
+  background-color: rgba(243, 93, 6, 0.5);
+}
+
+section.promotions p, section.voyages p {
+  font-size: 1em;
+  color: red;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/*Included here*/
+.included {
+  background-color: #e4dede;
+  padding: 3em 0;
+}
+
+.included h2 {
+  color: #ff9100;
+  font-size: .9em;
+}
+
+.included ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .included ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.included ul li img {
+  width: 30px;
+}
+
+@media only screen and (min-width: 1650px) {
+  .included ul li img {
+    width: 50px;
+  }
+}
+
+/*GT Voyages hete*/
+/*# sourceMappingURL=main.css.map */
