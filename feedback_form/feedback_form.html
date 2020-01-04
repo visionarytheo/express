@@ -32,14 +32,14 @@
     <main class="quote">
         <h1>Booking Quotation</h1>
 
-<form action="contact" netlify>
+<form action="contact" POST" data-netlify="true">
 
     <label>First Name
-        <input type="text" name="text" required>
+        <input type="text" name="name" required>
     </label> 
 
     <label>Last Name
-        <input type="text" name="text" required>
+        <input type="text" name="name" required>
     </label> 
 
     <label>Email 
@@ -47,15 +47,15 @@
     </label>
 
     <label>Cellphone
-        <input type="tel" name="tel" required>
+        <input type="tel" name="number" required>
     </label>
     
     <label>Embarking From
-        <input type="text" name="text" placeholder="e.g Durban or Cape Town" required>
+        <input type="text" name="name" placeholder="e.g Durban or Cape Town" required>
         </label> 
 
     <label>Sailing To
-        <input type="text" name="text" placeholder="e.g Mozambique or Cape Town or Namibia or Mauritius" required>
+        <input type="text" name="name" placeholder="e.g Mozambique or Cape Town or Namibia or Mauritius" required>
     </label> 
 
     <label>Booking Dates
@@ -72,7 +72,7 @@
 
 
 <label>Comments and Questions
-<textarea name="textarea" maxlength="500"></textarea>
+<textarea name="message" maxlength="500"></textarea>
 </label>
 
 <button type="submit" class="btn-2 btn-1">Get Quote</button>
