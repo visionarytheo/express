@@ -3,7 +3,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "greyiatravel@gmail.com";
+$webmaster_email = "mailto.greyiatravel@gmail.com";
 
 /*
 This bit sets the URLs of the supporting pages.
@@ -22,8 +22,16 @@ $comments = $_REQUEST['comments'] ;
 $first_name = $_REQUEST['first_name'] ;
 $msg = 
 "First Name: " . $first_name . "\r\n" . 
+"Last Name: " . $last_name . "\r\n" .
 "Email: " . $email_address . "\r\n" . 
-"Comments: " . $comments ;
+"Cellphone: " . $cellphone . "\r\n" . 
+"Embarkation from: " . $departing_from . "\r\n" . 
+"Sailing To: " . $sailing_to . "\r\n" . 
+"Booking Dates: " . $from_date . "\r\n" . 
+"--: " . $to_date . "\r\n" . 
+"Number of Guests: " . $guests . "\r\n" . 
+
+"Comments and Questions: " . $comments ;
 
 /*
 The following function checks for email injection.
