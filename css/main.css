@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.6em;
 }
 
@@ -35,7 +35,7 @@ a {
 
 .container {
   text-align: center;
-  padding: .8em 1.2em;
+  padding: 0.8em 1.2em;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -55,8 +55,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header .logo {
@@ -107,49 +107,51 @@ header nav ul li a {
 }
 
 header nav ul li :hover {
-  background-color: #ff9100;
-}
-
-header nav ul :first-child :hover {
-  background-color: #413f3f;
+  background-color: #8080802d;
 }
 
 /*Hero section here*/
 section.hero {
   min-height: 400px;
-  background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -1200px -300px;
+  max-width: 100%;
+  background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg)
+    no-repeat -1200px -300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 650px) {
   section.hero {
-    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -850px -300px;
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg)
+      no-repeat -850px -300px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   section.hero {
-    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -600px;
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg)
+      no-repeat -600px;
     min-height: 650px;
   }
 }
 
 @media only screen and (min-width: 1650px) {
   section.hero {
-    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat -150px;
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg)
+      no-repeat -150px;
     min-height: 750px;
   }
 }
 
 @media only screen and (min-width: 1650px) {
   section.hero {
-    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg) no-repeat center;
+    background: url(../img/Home/child_hammock_beach_vacation_7968_1920x1080.jpg)
+      no-repeat center;
     min-height: 900px;
   }
 }
@@ -201,7 +203,7 @@ section.hero .btn-hero {
 section.hero a {
   background-color: #ff9100;
   border-radius: 5px;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   color: #fff;
   letter-spacing: 3px;
 }
@@ -251,8 +253,8 @@ main.about .box-1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main.about .box-1 div img {
@@ -263,27 +265,27 @@ main.about .box-1 div img {
   main.about .box-1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   main.about #services div {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   main.about #services .text-1 {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
 }
 
@@ -330,8 +332,8 @@ section.newsletter form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 1.55em 2em;
 }
 
@@ -345,8 +347,8 @@ section.newsletter form {
   section.newsletter form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -361,7 +363,7 @@ section.newsletter form button {
   color: #fff;
   border: none;
   border-radius: 3px;
-  padding: .5em 0;
+  padding: 0.5em 0;
   letter-spacing: 3px;
   cursor: pointer;
 }
@@ -393,7 +395,7 @@ section.newsletter form button {
 }
 
 section.newsletter form input {
-  padding: .5em 0;
+  padding: 0.5em 0;
   border: none;
 }
 
@@ -433,8 +435,8 @@ footer ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer ul li {
@@ -475,7 +477,7 @@ footer ul li {
     width: 15px;
     margin: 5em auto;
     -webkit-animation: move 2s infinite alternate;
-            animation: move 2s infinite alternate;
+    animation: move 2s infinite alternate;
   }
 }
 
@@ -489,21 +491,21 @@ footer ul li {
   @-webkit-keyframes move {
     from {
       -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
     }
     to {
       -webkit-transform: translateY(20px);
-              transform: translateY(20px);
+      transform: translateY(20px);
     }
   }
   @keyframes move {
     from {
       -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
     }
     to {
       -webkit-transform: translateY(20px);
-              transform: translateY(20px);
+      transform: translateY(20px);
     }
   }
   .box-1 div {
@@ -521,8 +523,8 @@ footer ul li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 650px) {
@@ -596,7 +598,7 @@ footer ul li {
 .hero-2 a {
   background-color: #ff9100;
   border-radius: 5px;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   color: #fff;
   letter-spacing: 3px;
 }
@@ -629,9 +631,9 @@ section.early-bookings .img-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 section.early-bookings .img-area img {
@@ -666,15 +668,18 @@ section.early-bookings .img-area .cruise .btn-2 {
 }
 
 /*Promotionals here*/
-section.promotions, section.voyages {
+section.promotions,
+section.voyages {
   padding: 2em 0 3em;
 }
 
-section.promotions h2, section.voyages h2 {
+section.promotions h2,
+section.voyages h2 {
   background-color: rgba(243, 93, 6, 0.5);
 }
 
-section.promotions p, section.voyages p {
+section.promotions p,
+section.voyages p {
   font-size: 1em;
   color: red;
   font-weight: bolder;
@@ -689,7 +694,7 @@ section.promotions p, section.voyages p {
 
 .included h2 {
   color: #ff9100;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .included ul {
@@ -698,20 +703,20 @@ section.promotions p, section.voyages p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 1024px) {
   .included ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -734,8 +739,8 @@ section.promotions p, section.voyages p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 650px) {
@@ -809,7 +814,7 @@ section.promotions p, section.voyages p {
 .hero-3 a {
   background-color: #ff9100;
   border-radius: 5px;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   color: #fff;
   letter-spacing: 3px;
 }
@@ -832,7 +837,8 @@ main.contacts h2 {
   padding: 0.5em 0;
 }
 
-main.contacts div.contact-1, main.contacts div.contact-2 {
+main.contacts div.contact-1,
+main.contacts div.contact-2 {
   padding: 2em;
 }
 
@@ -852,7 +858,7 @@ main.quote {
 
 main.quote h1 {
   background-color: #ff9100;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 @media only screen and (min-width: 1650px) {
@@ -906,16 +912,16 @@ main.quote form label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 1.55em 2em;
 }
 
 @media only screen and (min-width: 1024px) {
   main.quote form label {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
