@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feedback Form</title>
+    <link rel="icon" type="image/png" href="../img/Home/logo.png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="feedback-container">
+      <div class="container">
+        <header>
+          <img src="../img/Home/logo_black.png" alt="Logo" class="logo" />
+
+          <nav>
+            <a href="#" class="hide-desktop"
+              ><img
+                src="../img/Vector/iconfinder_Burger_Menu_4781852.png"
+                alt="Menu"
+                class="menu"
+                id="menu"
+            /></a>
+            <ul class="show-desktop hide-mobile error-nav" id="nav">
+              <li id="exit" class="exit-btn hide-desktop">
+                <img src="../img/Vector/exit.svg" alt="" />
+              </li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../cruises.html">Cruises</a></li>
+              <li><a href="../gt_voyages.html">GT Voyages</a></li>
+              <li><a href="../contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="feedback">
+          <h1>Booking Option</h1>
+
+          <form method="post" action="send_mail.php">
+            <label for="first_name"
+              >First Name
+              <input type="text" name="first_name" id="first_name" placeholder="First name" required />
+            </label>
+
+            <label for="last_name"
+              >Last Name
+              <input type="text" name="last_name" id="last_name" placeholder="Last name" required />
+            </label>
+
+            <label for="cellphone">Cellphone
+              <input type="" name="cellphone" id="cellphone" placeholder="+27789990000" required />
+            </label
+
+            <label for="email"
+              >Email
+              <input type="email" name="email_address" id="email" placeholder="Enter email" />
+            </label>
+
+            <label for="date_of_birth"
+              >Date of birth
+              <input type="date" name="date_of_birth" id="date_of_birth" />
+            </label>
+            <br />
+            <br />
+            <br />
+            <label for="destination" class="form-side"
+              >Destination
+              <br />
+              <select name="destination" id="destination">
+                <option value="select_one">Select one</option>
+                <option value="portuguese_island">Portuguese Island</option>
+                <option value="pomene">Pomene</option>
+                <option value="durban2knowhere">Durban2Knowhere</option>
+                <option value="cape_town">Cape Town</option>
+                <option value="mauritius">Mauritius</option>
+              </select>
+            </label>
+
+            <br />
+            <br />
+            <br />
+
+            <label for="departure_date" class="form-side"
+              >Departure Date <input type="date" name="departure_date"
+              id="departure_date"
+            </label>
+
+            <label for="voyager">Have you cruised before with MSC Cruises? <br /><br />
+              Yes:<input type="radio" name="voyager" id="voyager" value="Yes" />
+              No:<input type="radio" name="voyager" id="voyager" value="No" />
+            </label>
+
+            <label for="healthcare"
+              >Are you a Healthcare worker? <br /><br />
+              Yes:<input
+                type="radio"
+                name="healthcare"
+                id="healthcare"
+                value="Yes"
+              />
+              No:<input
+                type="radio"
+                name="healthcare"
+                id="healthcare"
+                value="No"
+              />
+            </label>
+
+            <label for="comments"
+              >Comments <br />
+              <br />
+              <textarea
+                name="comments"
+                maxlength="500"
+                rows="10"
+                cols="50"
+                id="comments"
+                placeholder="Type the first name, last name, date of birth and gender of the people traveling with in the same cabin" required
+              ></textarea>
+            </label>
+
+            <br />
+            <br />
+            <br />
+
+            <button>Submit the form</button>
+          </form>
+        </section>
+
+        <footer>
+          <ul>
+            <li>
+              <a
+                href="https://web.facebook.com/greyiat?_rdc=1&_rdr"
+                target="_blank"
+                ><img
+                  src="../img/Social_media/iconfinder_Facebook_194929.svg"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/greyiat" target="_blank"
+                ><img
+                  src="../img/Social_media/iconfinder_Twitter_194909.svg"
+                  alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCsr2iefrn2o3IxnGOOovO6w"
+                target="_blank"
+                ><img
+                  src="../img/Social_media/iconfinder_YouTube_194904.svg"
+                  alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+          <p>Copyright &copy; Greyia Travel 2019 | All Rights Reserved</p>
+        </footer>
+      </div>
+    </div>
+
+    <!--Javascript here-->
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
+    <!--Javascript ends here-->
+  </body>
+</html>

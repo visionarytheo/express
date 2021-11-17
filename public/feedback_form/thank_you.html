@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Thank You</title>
+    <link rel="icon" type="image/png" href="../img/Home/logo.png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container thank_you-container">
+        <header>
+            <img src="../img/Home/logo_black.png" alt="Logo" class="logo" />
+
+            <nav>
+                <a href="#" class="hide-desktop"><img src="../img/Vector/iconfinder_Burger_Menu_4781852.png" alt="Menu"
+                        class="menu" id="menu" /></a>
+                <ul class="show-desktop hide-mobile error-nav" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="../img/Vector/exit.svg" alt="" />
+                    </li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../cruises.html">Cruises</a></li>
+                    <li><a href="../gt_voyages.html">GT Voyages</a></li>
+                    <li><a href="../contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+       <section class="thank_you">
+        <h1>Thanks for your feedback!</h1>
+        <p>We appreciate that you took the time to send us feedback. Your feedback has been sent to the webmaster.</p>
+        <p><a href="feedback_form.html">Back to feedback form</a>.</p>
+       </section>
+
+    <!--Javascript here-->
+    <script>
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+
+        menu.addEventListener("click", function (e) {
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+
+        exit.addEventListener("click", function (e) {
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+    </script>
+    <!--Javascript ends here-->
+</body>
+
+</html>

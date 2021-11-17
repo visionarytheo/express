@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Greyia Travel | Welcome</title>
+    <link rel="icon" type="image/png" href="./img/Home/logo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./img/Home/logo.png" alt="Logo" class="logo" />
+
+        <nav>
+          <a href="#" class="hide-desktop"
+            ><img
+              src="./img/Vector/iconfinder_Burger_Menu_4781852.png"
+              alt="Menu"
+              class="menu"
+              id="menu"
+          /></a>
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="./img/Vector/exit.svg" alt="exit toggle" />
+            </li>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/cruises">Cruises</a></li>
+            <li><a href="/gt_voyages">GT Voyages</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h2>We do the planning for you.</h2>
+          <p>Let's book the vacation of your dreams!</p>
+        </div>
+        <div class="btn-hero btn-1">
+          <a href="cruises.html" id="btn-hero">Book Now</a>
+        </div>
+      </section>
+
+      <img
+        src="./img/Vector/Group_2.png"
+        alt="scroll down"
+        class="scroll hide-mobile show-desktop"
+      />
+
+      <main class="about" id="about-scroll">
+        <h1>About Us</h1>
+        <div class="box-1" id="background">
+          <div>
+            <img
+              src="./img/Home/background.png"
+              alt="Background"
+              class="img1"
+            />
+          </div>
+          <div class="text1-">
+            <h4>Our Background</h4>
+            <p>
+              Greyia Travel is a company found and managed by both a visionary
+              and a great people's person, who is well-versed in the fun and
+              rigors of traveling. Our travel agents are persistent and not even
+              talent can beat that. They came together to help other people plan
+              and book their dream vacations. We are here to remind people that
+              they really need a break.
+            </p>
+          </div>
+        </div>
+        <div class="box-1" id="services">
+          <div>
+            <img src="./img/Home/services.png" alt="Services" class="img1" />
+          </div>
+          <div class="text-1">
+            <h4>Our Services</h4>
+            <p>
+              Whether you're looking for cruises, plane tickets, accommodations,
+              or the whole package, we have you covered. Simply tell one of our
+              travel agents where you want to go travelling and we'll help you
+              figure out the rest. We work directly with other companies to get
+              the best deals.
+            </p>
+          </div>
+        </div>
+        <div class="box-1" id="satisfaction">
+          <div>
+            <img src="./img/Home/satis.png" alt="Satisfaction" class="img1" />
+          </div>
+          <div class="text-1">
+            <h4>Satisfaction Guaranteed</h4>
+            <p>
+              While working with us, we want you to be completely happy with the
+              experience. If you have questions about us, our services, or even
+              travel tips, get in touch!<br /><br />We hope you continue to book
+              with us for many years to come.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <section class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>
+          Subscribe for our newsletter and receive exclusive deals and offers!!
+        </p>
+        <form action="contact" netlify>
+          <input type="email" name="email" placeholder="Enter Email" />
+          <button type="submit" class="btn-1">Subsribe</button>
+        </form>
+      </section>
+
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://web.facebook.com/greyiat?_rdc=1&_rdr"
+              target="_blank"
+              ><img
+                src="./img/Social_media/iconfinder_Facebook_194929.svg"
+                alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/greyiat" target="_blank"
+              ><img
+                src="./img/Social_media/iconfinder_Twitter_194909.svg"
+                alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCsr2iefrn2o3IxnGOOovO6w"
+              target="_blank"
+              ><img
+                src="./img/Social_media/iconfinder_YouTube_194904.svg"
+                alt="YouTube"
+            /></a>
+          </li>
+        </ul>
+        <p>Copyright &copy; Greyia Travel 2019 | All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <!--Javascript here-->
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
+    <!--Javascript ends here-->
+  </body>
+</html>
