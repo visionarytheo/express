@@ -29,6 +29,11 @@ app.get('/contacts', (req, res) => {
     res.sendFile(__dirname + "/public/contacts.html")
 })
 
+//Black Friday
+app.get('/black', (req, res) => {
+    res.sendFile(__dirname + "/public/black.html")
+})
+
 app.listen(3000, () => {
     console.log('Sever running on port 3000')
 })

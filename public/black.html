@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotions | Black Friday</title>
+    <link rel="icon" type="image/png" href="./img/Home/logo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+          <img src="./img/Home/logo.png" alt="Logo" class="logo" />
+  
+          <nav>
+            <a href="#" class="hide-desktop"
+              ><img
+                src="./img/Vector/iconfinder_Burger_Menu_4781852.png"
+                alt="Menu"
+                class="menu"
+                id="menu"
+            /></a>
+            <ul class="show-desktop hide-mobile" id="nav">
+              <li id="exit" class="exit-btn hide-desktop">
+                <img src="./img/Vector/exit.svg" alt="exit toggle" />
+              </li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/cruises" class="active">Cruises</a></li>
+              <li><a href="/gt_voyages">GT Voyages</a></li>
+              <li><a href="/contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+            <section class="promo">
+                
+                    <div class="promo-hero"><img src="img/Promotions/black_friday.jpg" alt="Black Friday"></div>
+                    <div class="promo-info">
+
+                    <p>Black Friday can be turned into your next MSC cruise holiday with our festive offer!</p>
+                    <h3>Black Friday week is here, and you can save up to 50% on our Christmas cruise departing on 20 December and our New Year cruise departing on 30 December 2021.</h3>
+                    <p>Starting price from R4 900 per person (excluding mandatory charges).</p>
+                    <p>This offer is valid from 22 November to 27 November 2021</p>
+                    <p>Limited cabins are available, so don’t miss out!</p>
+
+                    </div>
+                
+            </section>
+
+            <section class="early-bookings">
+                <div class="heading1">
+                  <h1>Black Friday Deals</h1>
+                  <h3>Christmas and New Year's Cruise</h3>
+                </div>
+        
+                <div class="img-area">
+                  <div class="cruise" id="cruise">
+                    <img
+                      src="img/Cruises/beach_sand_palm_138407_1024x768.jpg"
+                      alt="3N-Opera"
+                    />
+                    <h1>6 Nights, 7 Days <span>MSC ORCHESTRA</span></h1>
+                    <p>Durban - Portuguese Island - Pomene - Durban</p>
+                    <p>20 DEC 2021</p>
+                    <a href="./feedback_form/feedback_form.html " class="btn-2 btn-1"
+                      >R 15 108 p.c</a
+                    >
+                  </div>
+        
+                  <div class="cruise">
+                    <img
+                      src="img/Cruises/beach_sand_sea_palm_92526_1024x768.jpg"
+                      alt="3N-Musica"
+                    />
+                    <h1>4 Nights, 5 Days <span>MSC ORCHESTRA</span></h1>
+                    <p>Durban - Pomene - Durban</p>
+                    <p>30 DEC 2021</p>
+                    <a href="./feedback_form/feedback_form.html " class="btn-2 btn-1"
+                      >R 12 632 p.c</a
+                    >
+                  </div>
+        
+                </div>
+              </section>
+
+        </main>
+  
+        <footer>
+          <div class="container">
+            <ul>
+              <li>
+                <a
+                  href="https://web.facebook.com/greyiat?_rdc=1&_rdr"
+                  target="_blank"
+                  ><img
+                    src="./img/Social_media/iconfinder_Facebook_194929.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/greyiat" target="_blank"
+                  ><img
+                    src="./img/Social_media/iconfinder_Twitter_194909.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCsr2iefrn2o3IxnGOOovO6w"
+                  target="_blank"
+                  ><img
+                    src="./img/Social_media/iconfinder_YouTube_194904.svg"
+                    alt="YouTube"
+                /></a>
+              </li>
+            </ul>
+            <p>Copyright &copy; Greyia Travel 2019 | All Rights Reserved</p>
+          </div>
+        </footer>
+      </div>
+
+      <!--Javascript here-->
+    <script>
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+  
+        menu.addEventListener("click", function (e) {
+          nav.classList.toggle("hide-mobile");
+          e.preventDefault();
+        });
+  
+        exit.addEventListener("click", function (e) {
+          nav.classList.toggle("hide-mobile");
+          e.preventDefault();
+        });
+      </script>
+      <!--Javascript ends here--
+
+</body>
+</html>
